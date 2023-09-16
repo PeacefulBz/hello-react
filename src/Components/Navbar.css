@@ -52,38 +52,40 @@
     color: #fff;
     font-size: 2rem;
   }
+
   .header {
     padding: 0 2rem;
   }
+
   .menu {
     width: 100%;
-    height: auto;
+    height: 0;
     display: flex;
-    padding: 1rem;
-    position: absolute;
     flex-direction: column;
-    top: 65px;
-    left: -100%;
-    opacity: 0;
-    transition: 0.5s ease;
-  }
-  .menu.active {
-    background: #111;
+    position: absolute;
+    top: 80px; /* Adjust this value to match your header height */
     left: 0;
+    opacity: 0;
+    background: #111;
+    overflow: hidden;
+    transition: height 0.5s ease, opacity 0.5s ease;
+  }
+
+  .menu.active {
+    height: auto;
     opacity: 1;
-    z-index: 1;
     padding-left: 0;
+    z-index: 1;
     align-content: center;
-    transition: 0.5s ease;
   }
+
   .menu li {
-    padding-right: 0;
+    padding: 10px 0;
   }
+
   .menu-link {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 10vw;
-    padding: 10px 0;
   }
 }
