@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./Navbar";
 import "./UserAndEmp.css";
+import { Link } from "react-router-dom";
 
 function UserAndEmp() {
   return (
@@ -16,7 +17,7 @@ function UserAndEmp() {
         <div className="content-right">
           <h1>Employee</h1>
           <button className="content-button">
-            <a href="#">Select</a>
+            <Link to="/Emplogin">Select</Link>
           </button>
         </div>
       </div>
