@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FiAirplay, FiX, FiMenu } from "react-icons/fi";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -18,7 +19,7 @@ function Navbar() {
           </div>
           <ul className={click ? "menu active" : "menu"}>
             <li className="menu-link" onClick={closeMoblieMenu}>
-              <a href="#">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li className="menu-link" onClick={closeMoblieMenu}>
               <a href="#">About</a>
@@ -30,7 +31,7 @@ function Navbar() {
               <a href="#">Contact</a>
             </li>
             <li className="menu-link" onClick={closeMoblieMenu}>
-              <a href="#">Login/Signup</a>
+              <Link to="/UserAndEmp">Login/Signup</Link>
             </li>
           </ul>
           <div className="mobile-menu" onClick={handleClick}>
