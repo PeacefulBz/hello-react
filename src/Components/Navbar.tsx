@@ -22,13 +22,13 @@ function Navbar() {
               <Link to="/">Home</Link>
             </li>
             <li className="menu-link" onClick={closeMoblieMenu}>
-              <a href="#">About</a>
+              <Link to="/About">About</Link>
             </li>
             <li className="menu-link" onClick={closeMoblieMenu}>
-              <a href="#">Job</a>
+              <Link to="/Job">Job</Link>
             </li>
             <li className="menu-link" onClick={closeMoblieMenu}>
-              <a href="#">Contact</a>
+              <Link to="/Contact">Contact</Link>
             </li>
             <li className="menu-link" onClick={closeMoblieMenu}>
               <Link to="/UserAndEmp">Login/Signup</Link>

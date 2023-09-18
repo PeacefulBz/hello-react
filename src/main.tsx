@@ -6,11 +6,27 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import UserAndEmp from "./Components/UserAndEmp";
 import Home from "./Components/Home";
 import Emplogin from "./Components/Emplogin";
+import Userlogin from "./Components/Userlogin";
+import About from "./Components/About";
+import Job from "./Components/Job";
+import Contact from "./Components/Contact";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+  },
+  {
+    path: "/About",
+    element: <About />,
+  },
+  {
+    path: "/Job",
+    element: <Job />,
+  },
+  {
+    path: "/Contact",
+    element: <Contact />,
   },
   {
     path: "/UserAndEmp",
@@ -19,6 +35,10 @@ const router = createBrowserRouter([
   {
     path: "/Emplogin",
     element: <Emplogin />,
+  },
+  {
+    path: "/Userlogin",
+    element: <Userlogin />,
   },
 ]);
 

@@ -1,6 +1,6 @@
 import React from "react";
 
-function Emplogin() {
+function Userlogin() {
   return (
     <>
       <div>UserLogin</div>
@@ -8,4 +8,4 @@ function Emplogin() {
   );
 }
 
-export default Emplogin;
+export default Userlogin;
