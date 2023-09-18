@@ -4,8 +4,8 @@ import "./Userlogin.css";
 function Userlogin() {
   return (
     <>
-      <div className="bodylogin">
-        <div className="logincontainer">
+      <div className="logincontainer">
+        <div className="login-form">
           <h2>Login</h2>
           <div className="icon">
             <i className="fas fa-user"></i>
